@@ -118,5 +118,4 @@
             $controller -> getPageHome();
             break;
     }
-
 ?>
