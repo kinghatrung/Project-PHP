@@ -1,0 +1,42 @@
+:root {
+    --box-color: #605E5E;
+    --text-color: #363636;
+    --hover-color: rgba(128, 128, 128, 0.125);
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.line-straight {
+    width: 1px;
+    height: 80px;
+    background-color: #605E5E;
+    margin: 20px auto 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Raleway', serif;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 4px;
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

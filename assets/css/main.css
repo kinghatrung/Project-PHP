@@ -4,22 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Responsive */
-/* Mobile and Tablet: width < 1024px */
-@media only screen and (max-width: 63.9375em) {
-
-}
-
-/* Mobile: width < 740px */
-@media only screen and (max-width: 46.25em) {
-
-}
-
-/* Tablet 740px <= width < 1024px */
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-
-}
-
 .line-straight {
     width: 1px;
     height: 80px;

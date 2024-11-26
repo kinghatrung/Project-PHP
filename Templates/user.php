@@ -217,14 +217,14 @@
             </div> 
 
             <div class="footer">
-                <div class="footer-content">
+               <div class="footer-content">
                     <p class="content-text">Chính sách quyền riêng tư</p>
                     <div class="content-icons">
-                        <a href="" class="footer-icon-link"><i class="footer-icon ti-facebook"></i></a>
-                        <a href="" class="footer-icon-link"><i class="footer-icon ti-twitter-alt"></i></a>
-                        <a href="" class="footer-icon-link"><i class="footer-icon ti-instagram"></i></a>
+                        <a href="https://www.facebook.com/huyen2706" class="footer-icon-link"><i class="footer-icon ti-facebook"></i></a>
+                        <a href="https://github.com/kinghatrung" class="footer-icon-link"><i class="footer-icon ti-github"></i></a>
+                        <a href="https://www.instagram.com/huyen_27.63/" class="footer-icon-link"><i class="footer-icon ti-instagram"></i></a>
                     </div>
-                    <p class="content-text">@ 2012 bản quyền của Decor. Decor - <a href="">Thiết kế nội thất</a></p>
+                    <p class="content-text">@ 2012 bản quyền của Decor. Decor - <a href="index.php?task=pageuser">Thiết kế nội thất</a></p>
                 </div>
             </div>
 
