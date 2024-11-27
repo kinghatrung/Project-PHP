@@ -13,10 +13,34 @@
     .content-contact .contact-list {
         display: block;
     }
+
+    .content-section .bg-box,
+    .content-img .bg-box {
+        flex-direction: column;
+    }
+
+    .content-img .bg-text-box {
+        order: 1;
+    }
+
+    .content-img .bg-section {
+        order: 0;
+    }
 }
 
 /* Mobile: width < 740px */
 @media only screen and (max-width: 740px) {
+    /* Header */
+    .header .nav {
+        display: block;
+    }
+    
+    /* Header Menu */
+        #header .mobile-menu-btn {
+        display: flex;
+    }
+
+    /* Main */
     .slider .text-heading {
         font-size: 18px;
         letter-spacing: 12px;
@@ -43,6 +67,39 @@
 
     .content .decor-btn {
         width: 100%;
+    }
+
+    .content-section .bg-section,
+    .content-img .bg-section {
+        height: 300px;
+    }
+
+    .content-section .bg-box,
+    .content-img .bg-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .content-section .bg-text,
+    .content-img .bg-text {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 4px;
+    }
+
+    .content-section .bg-subtext,
+    .content-img .bg-subtext {
+        font-size: 18px;
+    }
+
+    .content-section .bg-text-section,
+    .content-img .bg-text-section {
+        font-size: 14px;
+    }
+
+    .content-section .bg-button,
+    .content-img .bg-button {
+        padding: 20px;
     }
 
     /* Form Đăng kí */
@@ -90,5 +147,33 @@
 
     .content .decor-btn {
         width: 100%;
+    }
+    
+    .content-section .bg-box,
+    .content-img .bg-box {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .content-img .bg-text,
+    .content-section .bg-text {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 4px;
+    }
+
+    .content-img .bg-subtext,
+    .content-section .bg-subtext {
+        font-size: 20px;
+    }
+
+    .content-img .bg-text-section,
+    .content-section .bg-text-section {
+        font-size: 16px;
+    }
+    
+    .content-section .bg-section,
+    .content-img .bg-section {
+        height: 500px;
     }
 }

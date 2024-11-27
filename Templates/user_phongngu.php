@@ -9,7 +9,7 @@
         <link rel="shortcut icon" href="https://symbols.vn/wp-content/uploads/2021/11/Mau-bieu-tuong-ngoi-nha-Png.jpg" type="image/x-icon">
         <link rel="stylesheet" href="./assets/css/base.css?= <?php echo time(); ?>">
         <link rel="stylesheet" href="./assets/css/main.css?= <?php echo time(); ?>">
-        <link rel="stylesheet" href="./assets/css/reponsive?= <?php echo time(); ?>">  
+        <link rel="stylesheet" href="./assets/css/reponsive.css?= <?php echo time(); ?>">  
         <title>DHOME | Mẫu Phòng Ngủ</title>
     </head>
 

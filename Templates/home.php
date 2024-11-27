@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/base.css?= <?php echo time(); ?>">
+        <link rel="stylesheet" href="./assets/css/reponsive.css?= <?php echo time(); ?>">
         <link rel="stylesheet" href="./assets/css/main.css?= <?php echo time(); ?>">
-        <link rel="stylesheet" href="./assets/css/reponsive?= <?php echo time(); ?>">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Tinos:ital@0;1&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
@@ -15,7 +15,7 @@
 
     <body>
         <div class="main">
-            <div class="header">
+            <div id="header" class="header">
                 <div class="nav-logo">
                     <h1 class="nav-logo-text"><a href="index.php?task=pagehome">DHOME</a></h1>
                 </div>
@@ -28,6 +28,10 @@
                 </ul>
 
                 <div class="search-box">
+                    <div id="mobile-menu" class="mobile-menu-btn">
+                        <i class="menu-icon ti-menu"></i>
+                    </div>
+
                     <div class="line"></div>
 
                     <div class="user-icon-box">
@@ -151,5 +155,37 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            var header = document.getElementById("header");
+            var mobileMenu = document.getElementById("mobile-menu");
+            var headerHeight = header.clientHeight
+
+            console.log(headerHeight)
+
+            mobileMenu.onclick = function() {
+                var isClose = header.clientHeight === headerHeight
+
+                if (isClose) {
+                    header.style.height = 'auto'
+                } else {
+                    header.style.height = null
+                }
+            }
+
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+            for (var i = 0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i]
+                
+                menuItem.onclick = function(event) {
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('user-subnav')
+                    if (isParentMenu) {
+                        event.preventDefault()
+                    }else {
+                        header.style.height = null
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
