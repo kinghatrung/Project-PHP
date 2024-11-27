@@ -426,6 +426,7 @@
     color: #363636;
     line-height: 1.4;
     letter-spacing: 1px;
+    text-align: justify;
 }
 
 .content-contact .follow-list a:hover {
