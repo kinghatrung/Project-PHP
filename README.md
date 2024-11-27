@@ -1,5 +1,5 @@
 # Dự án cơ bản về PHP MVC
-## [Link Demo](3.106.244.232)
+## Link Demo: 3.106.244.232
 ## Mô tả
 ### Website quản lí nội thất được xậy dựng với các chức năng đơn giản như
 - Login/Register/Forgot Password 
