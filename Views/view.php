@@ -32,7 +32,7 @@
 
         // Admin
         public function getPageAdmin() {
-            include_once 'Templates/admin.html';
+            include_once 'Templates/admin.php';
         }
 
         public function getPageProduct() {

@@ -21,21 +21,23 @@
                 </div>
 
                 <ul class="nav">
-                    <li><a href="#" hre>Trang chủ</a></li>
+                    <li><a href="#">Trang chủ</a></li>
                     <li><a href="#join">Tham gia</a></li>
                     <li><a href="#form">Khám phá</a></li>
                     <li><a href="#contact">Liên hệ</a></li>
                 </ul>
+                
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
 
                 <div class="search-box">
-                    <div id="mobile-menu" class="mobile-menu-btn">
-                        <i class="menu-icon ti-menu"></i>
-                    </div>
-
                     <div class="line"></div>
 
                     <div class="user-icon-box">
-                        <a class="user-icon"><i class="ti-user"></i></a>
+                        <a class="user-icon-link">
+                            <i class="user-icon ti-user"></i>
+                        </a>
                        
                         <ul class="user-subnav">
                             <li><a href="index.php?task=pagelogin">Đăng nhập</a></li>
@@ -45,7 +47,6 @@
 
                     <div class="line"></div>
                 </div>   
-
             </div>
 
             <div class="slider">
@@ -161,7 +162,6 @@
             var mobileMenu = document.getElementById("mobile-menu");
             var headerHeight = header.clientHeight
 
-            console.log(headerHeight)
 
             mobileMenu.onclick = function() {
                 var isClose = header.clientHeight === headerHeight
@@ -171,6 +171,7 @@
                 } else {
                     header.style.height = null
                 }
+                console.log(mobileMenu)
             }
 
             var menuItems = document.querySelectorAll('#nav li a[href*="#"]')

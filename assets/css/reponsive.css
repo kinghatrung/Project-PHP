@@ -37,7 +37,7 @@
     
     /* Header Menu */
         #header .mobile-menu-btn {
-        display: flex;
+        display: block;
     }
 
     /* Main */

@@ -48,7 +48,9 @@
                     <div class="line"></div>
 
                     <div class="user-icon-box">
-                        <a class="user-icon"><i class="ti-user"></i></a>
+                        <a class="user-icon-link">
+                            <i class="user-icon ti-user"></i>
+                        </a>
                        
                         <ul class="user-subnav">
                             <li><a href="index.php?task=pagehome">

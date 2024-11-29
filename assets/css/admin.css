@@ -1,17 +1,16 @@
-.main {
-    padding: 0 80px;
-}
-
 .header {
-    position: fixed;
-    top: 0;
-    left: 80px;
-    right: 80px;
-    height: 80px;
-    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    max-width: 100%;
+    padding: 0 20px;
+    z-index: 1;
+    margin: 0 auto;
     background-color: var(--white-color);
     border-bottom: 2px solid var(--box-color);
 }
@@ -109,10 +108,7 @@
 }
 
 .user-icon-box {
-    display: inline-flex;
-    align-items: center;
     text-decoration: none;
-    font-size: 24px;
     color: var(--text-color);
 }
 
@@ -144,11 +140,8 @@
 }
 
 .header .user-icon {
-    display: inline-flex;
-    align-items: center;
     text-decoration: none;
     color: #605E5E;
-    height: 36px;
     font-size: 24px;
 }
 
@@ -163,7 +156,7 @@
 .login-sign::before {
     content: "";
     position: absolute;
-    width: 44px;
+    width: 70px;
     height: 10px;
     right: 0;
     top: -10px;
@@ -199,7 +192,8 @@
     position: relative;
     padding-top: 50%;
     margin-top: 80px;
-    background: url('../img/slider/anh6.jpg') top center / cover no-repeat;
+    /* background: url('./img/slider/anh6.jpg') top center / 100% auto cover no-repeat;  */
+    background: url(../img/slider/anh6.jpg) top center / 100% auto no-repeat;
 }
 
 .slider .text-content {
@@ -349,7 +343,8 @@
     border-top: 2px solid #605E5E;
     background-color: #fff;
     font-family: 'Tinos', serif;
-    margin: 0 80px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .footer .footer-content {

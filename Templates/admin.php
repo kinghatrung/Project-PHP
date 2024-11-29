@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/base.css?= <?php echo time(); ?>">
+        <link rel="stylesheet" href="./assets/css/admin.css?= <?php echo time(); ?>">
+        <link rel="stylesheet" href="./assets/css/reponsive.css?= <?php echo time(); ?>">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Tinos:ital@0;1&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
         <link rel="shortcut icon" href="https://symbols.vn/wp-content/uploads/2021/11/Mau-bieu-tuong-ngoi-nha-Png.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="./assets/css/base.css">
-        <link rel="stylesheet" href="./assets/css/admin.css">
-        <link rel="stylesheet" href="./assets/css/reponsive.css">
         <title>DHOME - Admin</title>
     </head>
 
@@ -23,13 +23,16 @@
                 <ul class="nav">
                     <li><a href="index.php?task=pageproduct">Sản phẩm</a></li>
                     <li><a href="index.php?task=pagepersonnel">Nhân viên</a></li>
-                    <li><a href="index.php?task=pagekts">Đội ngũ kiến trúc sư</a></li>
+                    <li><a href="index.php?task=pagedesigner">Đội ngũ kiến trúc sư</a></li>
                 </ul>
 
                 <div class="user-box">
                     <div class="line"></div>
+
                     <div class="user-icon-box">
-                        <a class="user-icon"><i class="ti-user"></i></a>
+                        <a class="user-icon">
+                            <i class="ti-user"></i>
+                        </a>
                         <ul class="login-sign">
                             <li><a href="index.php?task=pagehome">
                                 <form action="" method="POST">
